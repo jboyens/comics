@@ -12,6 +12,19 @@ end
 
 group :development, :test do
   gem 'jasmine'
+  gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'guard-rails'
+  gem 'guard-rails_best_practices'
+  gem 'guard-jasmine'
+  gem 'fuubar'
+end
+
+group :test do
+  gem 'rr'
 end
 
 gem 'jquery-rails'
