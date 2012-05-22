@@ -1,0 +1,15 @@
+#content
+
+- content_for :js_footer do
+  :javascript
+    $(function() {
+      var comics = new window.collections.comics();
+
+      comics.reset(#{@files.to_json});
+
+      var view = new window.views.comics_collection_view({collection: comics});
+
+      $('#content').append(view.render().$el);
+
+      Backbone.history.start();
+    });
