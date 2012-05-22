@@ -4,6 +4,6 @@ describe("Comics Collection", function() {
   });
 
   it("should have a proper URL", function() {
-    expect(new window.collections.comics().url).toEqual("/comics");
+    expect(new window.collections.comics().url).toEqual("/");
   });
 });
